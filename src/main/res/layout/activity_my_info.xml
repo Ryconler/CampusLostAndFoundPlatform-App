@@ -1,0 +1,148 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView  xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:background="#f0f0f0"
+    android:layout_height="match_parent">
+    <LinearLayout
+        xmlns:tools="http://schemas.android.com/tools"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+        <include layout="@layout/title" />
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="#fff">
+
+            <TextView
+                android:id="@+id/username_label"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="15dp"
+                android:layout_marginTop="18dp"
+                android:text="用  户  名"
+                android:textColor="#000"
+                android:textSize="14sp"
+                android:textStyle="bold" />
+            <TextView
+                android:id="@+id/usernameInfo"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="15dp"
+                android:layout_marginRight="15dp"
+                android:layout_marginTop="15dp"
+                android:layout_toRightOf="@id/username_label"
+                android:text=""
+                android:textColor="#606060"
+                android:textSize="18sp" />
+
+            <TextView
+                android:id="@+id/tel_label"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/username_label"
+                android:layout_toLeftOf="@id/telInfo"
+                android:layout_alignTop="@id/telInfo"
+                android:layout_marginRight="15dp"
+                android:layout_marginTop="3dp"
+                android:text="手  机  号"
+                android:textColor="#000"
+                android:textSize="14sp"
+                android:textStyle="bold" />
+            <TextView
+                android:id="@+id/telInfo"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="15dp"
+                android:layout_marginRight="15dp"
+                android:layout_marginTop="15dp"
+                android:layout_below="@id/usernameInfo"
+                android:layout_alignLeft="@id/usernameInfo"
+                android:text=""
+                android:textColor="#606060"
+                android:textSize="18sp" />
+
+        </RelativeLayout>
+
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:background="#fff">
+            <!--类别-->
+            <TextView
+                android:id="@+id/password_label"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="15dp"
+                android:layout_marginTop="18dp"
+                android:text="密        码"
+                android:textColor="#000"
+                android:textSize="14sp"
+                android:textStyle="bold" />
+
+            <TextView
+                android:id="@+id/passwordInfo"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="15dp"
+                android:layout_marginRight="15dp"
+                android:layout_marginTop="15dp"
+                android:layout_toRightOf="@id/password_label"
+                android:textColor="#606060"
+                android:textSize="18sp" />
+            <!--地址-->
+            <TextView
+                android:id="@+id/school_label"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignTop="@id/schoolInfo"
+                android:layout_marginRight="15dp"
+                android:layout_marginTop="3dp"
+
+                android:layout_toLeftOf="@id/schoolInfo"
+                android:text="学        校"
+                android:textColor="#000"
+                android:textSize="14sp"
+                android:textStyle="bold" />
+
+            <TextView
+                android:id="@+id/schoolInfo"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignLeft="@id/passwordInfo"
+                android:layout_below="@id/passwordInfo"
+                android:layout_marginRight="15dp"
+                android:layout_marginTop="15dp"
+                android:text=""
+                android:textColor="#606060"
+                android:textSize="18sp" />
+            <!---描述-->
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignTop="@id/qqInfo"
+                android:layout_marginRight="15dp"
+                android:layout_marginTop="3dp"
+                android:layout_toLeftOf="@id/qqInfo"
+                android:text="Q          Q"
+                android:textColor="#000"
+                android:textSize="14sp"
+                android:textStyle="bold" />
+
+            <TextView
+                android:id="@+id/qqInfo"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignLeft="@id/schoolInfo"
+                android:layout_below="@id/schoolInfo"
+                android:layout_marginRight="15dp"
+                android:layout_marginTop="15dp"
+                android:layout_marginBottom="15dp"
+                android:text=""
+                android:textColor="#606060"
+                android:textSize="18sp" />
+        </RelativeLayout>
+    </LinearLayout>
+</ScrollView>

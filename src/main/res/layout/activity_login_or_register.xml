@@ -1,0 +1,87 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:id="@+id/activity_main"
+    android:background="@drawable/background"
+    android:fadingEdge="vertical">
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+
+        >
+
+        <include layout="@layout/title" />
+
+
+        <ProgressBar
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginTop="48dp"
+            android:id="@+id/progress"/>
+
+        <EditText
+            android:id="@+id/username"
+            android:layout_width="320dp"
+            android:layout_height="48dp"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginTop="48dp"
+            android:background="#9c808080"
+            android:hint="请输入用户名"
+            android:paddingLeft="8dp"
+            android:textColor="#fff"
+            android:textColorHint="#9ccfcfcf" />
+
+        <EditText
+            android:id="@+id/password"
+            android:layout_width="320dp"
+            android:layout_height="48dp"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginTop="16dp"
+            android:background="#9c808080"
+            android:hint="请输入密码"
+            android:paddingLeft="8dp"
+            android:textColor="#ffffff"
+            android:textColorHint="#9ccfcfcf" />
+
+        <Button
+            android:id="@+id/login"
+            android:layout_width="320dp"
+            android:layout_height="60dp"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginTop="16dp"
+            android:background="@drawable/shape"
+            android:text="登录"
+            android:textColor="#ffffff"
+            android:textSize="20sp"
+            android:alpha="0.7"/>
+
+        <Button
+            android:id="@+id/register"
+            android:layout_width="320dp"
+            android:layout_height="60dp"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginTop="16dp"
+            android:background="@drawable/shape"
+            android:text="注册"
+            android:textColor="#ffffff"
+            android:textSize="20sp"
+            android:alpha="0.7"/>
+
+        <TextView
+            android:id="@+id/casual"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginTop="16dp"
+            android:text="随便看看"
+            android:textColor="#ed4255"
+            android:textSize="15sp"
+            />
+
+    </LinearLayout>
+</ScrollView>

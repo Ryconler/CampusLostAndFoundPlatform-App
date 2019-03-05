@@ -1,0 +1,320 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView  xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:background="#f0f0f0"
+    android:layout_height="match_parent">
+    <LinearLayout
+        xmlns:tools="http://schemas.android.com/tools"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+        <include layout="@layout/title" />
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="#fff">
+            <ImageView
+                android:layout_width="100dp"
+                android:layout_height="100dp"
+                android:id="@+id/hasFound"
+
+                android:layout_alignParentRight="true"
+                android:layout_alignParentTop="true" />
+            <TextView
+                android:id="@+id/title_label"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="15dp"
+                android:layout_marginTop="18dp"
+                android:text="标        题"
+                android:textColor="#000"
+                android:textSize="14sp"
+                android:textStyle="bold" />
+            <TextView
+                android:id="@+id/title"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="15dp"
+                android:layout_marginRight="15dp"
+                android:layout_marginTop="15dp"
+                android:layout_toRightOf="@id/title_label"
+                android:text=""
+                android:textColor="#606060"
+                android:textSize="18sp" />
+
+            <TextView
+                android:id="@+id/username_label"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/title_label"
+                android:layout_toLeftOf="@id/username"
+                android:layout_alignTop="@id/username"
+                android:layout_marginRight="15dp"
+                android:layout_marginTop="3dp"
+                android:text="发  布  人"
+                android:textColor="#000"
+                android:textSize="14sp"
+                android:textStyle="bold" />
+            <TextView
+                android:id="@+id/username"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="15dp"
+                android:layout_marginRight="15dp"
+                android:layout_marginTop="15dp"
+                android:layout_below="@id/title"
+                android:layout_alignLeft="@id/title"
+                android:text=""
+                android:textColor="#606060"
+                android:textSize="18sp" />
+
+            <Button
+                android:id="@+id/thankButton"
+                android:layout_width="wrap_content"
+                android:layout_height="35dp"
+                android:layout_below="@id/title"
+                android:layout_marginRight="15dp"
+                android:layout_marginTop="10dp"
+                android:layout_toRightOf="@id/username"
+                android:background="#ff5724"
+                android:text="写下感谢语"
+                android:textColor="#fff" />
+
+
+        </RelativeLayout>
+
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="失物信息"
+            android:layout_marginLeft="15dp"
+            android:layout_marginTop="10dp"/>
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:background="#fff">
+            <!--类别-->
+            <TextView
+                android:id="@+id/articleType_label"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="15dp"
+                android:layout_marginTop="18dp"
+                android:text="类        别"
+                android:textColor="#000"
+                android:textSize="14sp"
+                android:textStyle="bold" />
+
+            <TextView
+                android:id="@+id/articleType"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="15dp"
+                android:layout_marginRight="15dp"
+                android:layout_marginTop="15dp"
+                android:layout_toRightOf="@id/articleType_label"
+                android:textColor="#606060"
+                android:textSize="18sp" />
+            <!--地址-->
+            <TextView
+                android:id="@+id/address_label"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignTop="@id/address"
+                android:layout_marginRight="15dp"
+                android:layout_marginTop="3dp"
+
+                android:layout_toLeftOf="@id/address"
+                android:text="地        址"
+                android:textColor="#000"
+                android:textSize="14sp"
+                android:textStyle="bold" />
+
+            <TextView
+                android:id="@+id/address"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignLeft="@+id/articleType"
+                android:layout_below="@+id/articleType"
+                android:layout_marginRight="15dp"
+                android:layout_marginTop="15dp"
+                android:text=""
+                android:textColor="#606060"
+                android:textSize="18sp" />
+            <!---描述-->
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignTop="@id/detail"
+                android:layout_marginRight="15dp"
+                android:layout_marginTop="3dp"
+                android:layout_toLeftOf="@id/detail"
+                android:text="描        述"
+                android:textColor="#000"
+                android:textSize="14sp"
+                android:textStyle="bold" />
+
+            <TextView
+                android:id="@+id/detail"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignLeft="@id/address"
+                android:layout_below="@id/address"
+                android:layout_marginRight="15dp"
+                android:layout_marginTop="15dp"
+                android:text=""
+                android:textColor="#606060"
+                android:textSize="18sp" />
+            <!--所在学校-->
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignTop="@id/school"
+                android:layout_marginRight="15dp"
+                android:layout_marginTop="3dp"
+                android:layout_toLeftOf="@id/school"
+                android:text="所在学校"
+                android:textColor="#000"
+                android:textSize="14sp"
+                android:textStyle="bold" />
+
+            <TextView
+                android:id="@+id/school"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignLeft="@id/detail"
+                android:layout_below="@id/detail"
+                android:layout_marginTop="15dp"
+                android:text=""
+                android:textColor="#606060"
+                android:textSize="18sp" />
+            <!--发布时间-->
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignTop="@id/date"
+                android:layout_marginRight="15dp"
+                android:layout_marginTop="3dp"
+                android:layout_toLeftOf="@id/date"
+                android:text="发布时间"
+                android:textColor="#000"
+                android:textSize="14sp"
+                android:textStyle="bold" />
+
+            <TextView
+                android:id="@+id/date"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignLeft="@id/school"
+                android:layout_below="@id/school"
+                android:layout_marginBottom="15dp"
+                android:layout_marginTop="15dp"
+                android:text=""
+                android:textColor="#606060"
+                android:textSize="18sp" />
+
+
+        </RelativeLayout>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="联系人信息"
+            android:layout_marginTop="10dp"
+            android:layout_marginLeft="15dp"/>
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:background="#fff">
+            <!--姓名-->
+            <TextView
+                android:id="@+id/name_label"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="15dp"
+                android:layout_marginTop="18dp"
+                android:text="姓        名"
+                android:textColor="#000"
+                android:textSize="14sp"
+                android:textStyle="bold" />
+
+            <TextView
+                android:id="@+id/contactName"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="15dp"
+                android:layout_marginRight="15dp"
+                android:layout_marginTop="15dp"
+                android:layout_toRightOf="@id/name_label"
+                android:text=""
+                android:textColor="#606060"
+                android:textSize="18sp" />
+            <!--电话-->
+            <TextView
+                android:id="@+id/tel_label"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignTop="@id/contactTel"
+                android:layout_marginRight="15dp"
+                android:layout_marginTop="3dp"
+                android:layout_toLeftOf="@id/contactTel"
+                android:text="电        话"
+                android:textColor="#000"
+                android:textSize="14sp"
+                android:textStyle="bold" />
+
+            <TextView
+                android:id="@+id/contactTel"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignLeft="@id/contactName"
+                android:layout_below="@id/contactName"
+                android:layout_marginRight="15dp"
+                android:layout_marginTop="15dp"
+                android:text=""
+                android:textColor="#606060"
+                android:textSize="18sp" />
+            <!--QQ-->
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignTop="@id/contactQq"
+                android:layout_marginRight="15dp"
+                android:layout_marginTop="3dp"
+                android:layout_toLeftOf="@id/contactQq"
+                android:text="Q          Q"
+                android:textColor="#000"
+                android:textSize="14sp"
+                android:textStyle="bold" />
+
+            <TextView
+                android:id="@+id/contactQq"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignLeft="@id/contactTel"
+                android:layout_below="@id/contactTel"
+                android:layout_marginBottom="15dp"
+                android:layout_marginTop="15dp"
+                android:text=""
+                android:textColor="#606060"
+                android:textSize="18sp" />
+        </RelativeLayout>
+
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@drawable/shape"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginTop="10dp"
+            android:layout_marginBottom="10dp"
+            android:textColor="#fff"
+            android:textSize="20dp"
+            android:id="@+id/foundButton"
+            android:text="确认找回"/>
+    </LinearLayout>
+</ScrollView>

@@ -1,0 +1,197 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView  xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:background="#f0f0f0"
+    android:layout_height="match_parent">
+    <LinearLayout
+        xmlns:tools="http://schemas.android.com/tools"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+        <include layout="@layout/title" />
+        <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="成员1"
+        android:layout_marginTop="10dp"
+        android:layout_marginLeft="15dp"/>
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:background="#fff">
+            <TextView
+                android:id="@+id/title_label"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="15dp"
+                android:layout_marginTop="18dp"
+                android:text="姓        名"
+                android:textColor="#000"
+                android:textSize="14sp"
+                android:textStyle="bold" />
+            <TextView
+                android:id="@+id/title"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="15dp"
+                android:layout_marginRight="15dp"
+                android:layout_marginTop="15dp"
+                android:layout_toRightOf="@id/title_label"
+                android:text="徐杨"
+                android:textColor="#606060"
+                android:textSize="18sp" />
+
+            <TextView
+                android:id="@+id/username_label"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/title_label"
+                android:layout_toLeftOf="@id/username"
+                android:layout_alignTop="@id/username"
+                android:layout_marginRight="15dp"
+                android:layout_marginTop="3dp"
+                android:text="学        号"
+                android:textColor="#000"
+                android:textSize="14sp"
+                android:textStyle="bold" />
+            <TextView
+                android:id="@+id/username"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="15dp"
+                android:layout_marginRight="15dp"
+                android:layout_marginTop="15dp"
+                android:layout_below="@id/title"
+                android:layout_alignLeft="@id/title"
+                android:text="1513042001"
+                android:textColor="#606060"
+                android:textSize="18sp" />
+        </RelativeLayout>
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="成员2"
+            android:layout_marginTop="10dp"
+            android:layout_marginLeft="15dp"/>
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:background="#fff">
+
+            <TextView
+                android:id="@+id/title1_label"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="15dp"
+                android:layout_marginTop="18dp"
+                android:text="姓        名"
+                android:textColor="#000"
+                android:textSize="14sp"
+                android:textStyle="bold" />
+            <TextView
+                android:id="@+id/title1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="15dp"
+                android:layout_marginRight="15dp"
+                android:layout_marginTop="15dp"
+                android:layout_toRightOf="@id/title1_label"
+                android:text="吴可贤"
+                android:textColor="#606060"
+                android:textSize="18sp" />
+
+            <TextView
+                android:id="@+id/username1_label"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/title1_label"
+                android:layout_toLeftOf="@id/username1"
+                android:layout_alignTop="@id/username1"
+                android:layout_marginRight="15dp"
+                android:layout_marginTop="3dp"
+                android:text="学        号"
+                android:textColor="#000"
+                android:textSize="14sp"
+                android:textStyle="bold" />
+            <TextView
+                android:id="@+id/username1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="15dp"
+                android:layout_marginRight="15dp"
+                android:layout_marginTop="15dp"
+                android:layout_below="@id/title1"
+                android:layout_alignLeft="@id/title1"
+                android:text="1513042020"
+                android:textColor="#606060"
+                android:textSize="18sp" />
+        </RelativeLayout>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="成员3"
+            android:layout_marginTop="10dp"
+            android:layout_marginLeft="15dp"/>
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:background="#fff">
+
+            <TextView
+                android:id="@+id/title2_label"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="15dp"
+                android:layout_marginTop="18dp"
+                android:text="姓        名"
+                android:textColor="#000"
+                android:textSize="14sp"
+                android:textStyle="bold" />
+            <TextView
+                android:id="@+id/title2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="15dp"
+                android:layout_marginRight="15dp"
+                android:layout_marginTop="15dp"
+                android:layout_toRightOf="@id/title2_label"
+                android:text="朱星杰"
+                android:textColor="#606060"
+                android:textSize="18sp" />
+
+            <TextView
+                android:id="@+id/username2_label"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/title2_label"
+                android:layout_toLeftOf="@id/username2"
+                android:layout_alignTop="@id/username2"
+                android:layout_marginRight="15dp"
+                android:layout_marginTop="3dp"
+                android:text="学        号"
+                android:textColor="#000"
+                android:textSize="14sp"
+                android:textStyle="bold" />
+            <TextView
+                android:id="@+id/username2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="15dp"
+                android:layout_marginRight="15dp"
+                android:layout_marginTop="15dp"
+                android:layout_below="@id/title2"
+                android:layout_alignLeft="@id/title2"
+                android:text="1513042035"
+                android:textColor="#606060"
+                android:textSize="18sp" />
+        </RelativeLayout>
+
+
+
+
+    </LinearLayout>
+</ScrollView>
